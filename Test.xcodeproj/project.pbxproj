@@ -23,10 +23,10 @@
 		DE81E2061945BA6E005F906C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE81E2041945BA6E005F906C /* InfoPlist.strings */; };
 		DE81E2081945BA6E005F906C /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE81E2071945BA6E005F906C /* TestTests.m */; };
 		DE81E2191945BADB005F906C /* TFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE81E2181945BADB005F906C /* TFBaseViewController.m */; };
-		DE81E21C1945BB7E005F906C /* TFTutorialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE81E21B1945BB7E005F906C /* TFTutorialManager.m */; };
-		DE81E21F1945BC62005F906C /* TFTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE81E21E1945BC62005F906C /* TFTutorialView.m */; };
 		DE81E2331946A903005F906C /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE81E2301946A903005F906C /* SVProgressHUD.bundle */; };
 		DE81E2341946A903005F906C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DE81E2321946A903005F906C /* SVProgressHUD.m */; };
+		DE81E23B1946B560005F906C /* TFTutorialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE81E2381946B560005F906C /* TFTutorialManager.m */; };
+		DE81E23C1946B560005F906C /* TFTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE81E23A1946B560005F906C /* TFTutorialView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,13 +63,13 @@
 		DE81E2071945BA6E005F906C /* TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTests.m; sourceTree = "<group>"; };
 		DE81E2171945BADB005F906C /* TFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFBaseViewController.h; sourceTree = "<group>"; };
 		DE81E2181945BADB005F906C /* TFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFBaseViewController.m; sourceTree = "<group>"; };
-		DE81E21A1945BB7E005F906C /* TFTutorialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFTutorialManager.h; sourceTree = "<group>"; };
-		DE81E21B1945BB7E005F906C /* TFTutorialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTutorialManager.m; sourceTree = "<group>"; };
-		DE81E21D1945BC62005F906C /* TFTutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFTutorialView.h; sourceTree = "<group>"; };
-		DE81E21E1945BC62005F906C /* TFTutorialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTutorialView.m; sourceTree = "<group>"; };
 		DE81E2301946A903005F906C /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		DE81E2311946A903005F906C /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		DE81E2321946A903005F906C /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		DE81E2371946B560005F906C /* TFTutorialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFTutorialManager.h; sourceTree = "<group>"; };
+		DE81E2381946B560005F906C /* TFTutorialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTutorialManager.m; sourceTree = "<group>"; };
+		DE81E2391946B560005F906C /* TFTutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFTutorialView.h; sourceTree = "<group>"; };
+		DE81E23A1946B560005F906C /* TFTutorialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTutorialView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,12 +129,10 @@
 		DE81E1DF1945BA6E005F906C /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				DE81E2351946B560005F906C /* Resource */,
+				DE81E2361946B560005F906C /* Tutorial */,
 				DE81E1E81945BA6E005F906C /* TFAppDelegate.h */,
 				DE81E1E91945BA6E005F906C /* TFAppDelegate.m */,
-				DE81E21A1945BB7E005F906C /* TFTutorialManager.h */,
-				DE81E21B1945BB7E005F906C /* TFTutorialManager.m */,
-				DE81E21D1945BC62005F906C /* TFTutorialView.h */,
-				DE81E21E1945BC62005F906C /* TFTutorialView.m */,
 				DE81E1EB1945BA6E005F906C /* Main.storyboard */,
 				DE81E2171945BADB005F906C /* TFBaseViewController.h */,
 				DE81E2181945BADB005F906C /* TFBaseViewController.m */,
@@ -178,6 +176,24 @@
 				DE81E2041945BA6E005F906C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE81E2351946B560005F906C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DE81E2361946B560005F906C /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				DE81E2371946B560005F906C /* TFTutorialManager.h */,
+				DE81E2381946B560005F906C /* TFTutorialManager.m */,
+				DE81E2391946B560005F906C /* TFTutorialView.h */,
+				DE81E23A1946B560005F906C /* TFTutorialView.m */,
+			);
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,9 +299,9 @@
 				DE81E2341946A903005F906C /* SVProgressHUD.m in Sources */,
 				DE81E1EA1945BA6E005F906C /* TFAppDelegate.m in Sources */,
 				DE81E1F01945BA6E005F906C /* TFFirstViewController.m in Sources */,
+				DE81E23C1946B560005F906C /* TFTutorialView.m in Sources */,
+				DE81E23B1946B560005F906C /* TFTutorialManager.m in Sources */,
 				DE81E2191945BADB005F906C /* TFBaseViewController.m in Sources */,
-				DE81E21F1945BC62005F906C /* TFTutorialView.m in Sources */,
-				DE81E21C1945BB7E005F906C /* TFTutorialManager.m in Sources */,
 				DE81E1E61945BA6E005F906C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
