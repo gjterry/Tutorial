@@ -25,11 +25,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+/**
+ *  重栽父类
+ *
+ *  @return 本类名
+ */
 - (NSString *)className {
     NSString *className = NSStringFromClass([TFFirstViewController class]);
     return className;
 }
 
+#pragma mark TutorialViewDelegate
 - (void)tutorialViewStartButtonDidTapped:(TFTutorialView *)tutorialView {
     [TFTutorialView setTutorialDidDisplayForVersion:@"1.0" name:tutorialView.className];
     [tutorialView dismiss];

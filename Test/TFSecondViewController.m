@@ -30,8 +30,16 @@
     return className;
 }
 
-- (void)tutorialViewStartButtonDidTapped:(TFTutorialView *)tutorialView {
-    [tutorialView dismiss];
+//- (void)tutorialViewStartButtonDidTapped:(TFTutorialView *)tutorialView {
+//    [TFTutorialView setTutorialDidDisplayForVersion:@"1.0" name:tutorialView.className];
+//    [tutorialView dismiss];
+//}
+
+/**
+ *  不支持引导
+ */
+- (BOOL)shouldSupportTutorial {
+    return NO;
 }
 
 @end
