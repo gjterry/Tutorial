@@ -74,17 +74,24 @@
 /**
  *  这里注视掉异步显示  如果app运行到这里还没有找到rootViewController会报警告
  *
- *  @return <#return value description#>
+ *  @return
  */
 #pragma mark - Master show/dismiss methods
 - (void)show {
 //    dispatch_async(dispatch_get_main_queue(), ^{
+    
+    NSLog(@"keyWindow:%@",[UIApplication sharedApplication].keyWindow);
         self.frame = self.overlayWindow.bounds;
         if(!self.superview)
             [self.overlayWindow addSubview:self];
         [self.overlayWindow makeKeyAndVisible];
         [self setNeedsDisplay];
 //    });
+}
+
+- (void)showInView:(UIView *)v {
+    self.frame = v.bounds;
+    [v addSubview:self];
 }
 
 - (void)dismiss {
@@ -100,6 +107,10 @@
         }
     }];
     //    });
+}
+
+- (void)dismissFromSuperView {
+    [self removeFromSuperview];
 }
 
 

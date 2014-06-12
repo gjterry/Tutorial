@@ -6,12 +6,34 @@
 //  Copyright (c) 2014年 EDoctor. All rights reserved.
 //
 
+#import "TFTutorialViewController.h"
+
+#import "TFFirstViewController.h"
+
 #import "TFAppDelegate.h"
 
 @implementation TFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.window.backgroundColor = [UIColor purpleColor];
+//
+//
+    TFFirstViewController *vc = [[TFFirstViewController alloc]init];
+    
+    TFTutorialViewController *tutorialVC = [[TFTutorialViewController alloc]initWithViewController:vc andIdentifier:NSStringFromClass([TFFirstViewController class])];
+
+    UITabBarController *tabBarController = [[UITabBarController alloc]init];
+    tabBarController.viewControllers = @[tutorialVC];
+
+    self.window.rootViewController = tabBarController;
+//
+//
+//    
+    [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
 }

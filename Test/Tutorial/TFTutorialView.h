@@ -31,6 +31,10 @@
 
 - (void)show;
 
+- (void)showInView:(UIView *)v;
+
 - (void)dismiss;
+
+- (void)dismissFromSuperView;
 
 @end

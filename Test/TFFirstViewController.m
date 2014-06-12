@@ -5,10 +5,11 @@
 //  Created by Terry  on 14-6-9.
 //  Copyright (c) 2014年 EDoctor. All rights reserved.
 //
+#import "TFTutorialManager.h"
 
 #import "TFFirstViewController.h"
 
-@interface TFFirstViewController ()
+@interface TFFirstViewController () <TutorialViewDelegate>
 
 @end
 
@@ -23,17 +24,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-
-/**
- *  重栽父类
- *
- *  @return 本类名
- */
-- (NSString *)className {
-    NSString *className = NSStringFromClass([TFFirstViewController class]);
-    return className;
 }
 
 #pragma mark TutorialViewDelegate
