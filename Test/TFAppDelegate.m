@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 EDoctor. All rights reserved.
 //
 
-#import "TFTutorialViewController.h"
-
 #import "TFFirstViewController.h"
+
+#import "TFSecondViewController.h"
 
 #import "TFAppDelegate.h"
 
@@ -19,15 +19,21 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    self.window.backgroundColor = [UIColor purpleColor];
+    self.window.backgroundColor = [UIColor whiteColor];
 //
 //
-    TFFirstViewController *vc = [[TFFirstViewController alloc]init];
-    
-    TFTutorialViewController *tutorialVC = [[TFTutorialViewController alloc]initWithViewController:vc andIdentifier:NSStringFromClass([TFFirstViewController class])];
+    TFFirstViewController *fvc = [[TFFirstViewController alloc]init];
 
+    
+    TFSecondViewController *svc = [[TFSecondViewController alloc]init];
+    
+    
     UITabBarController *tabBarController = [[UITabBarController alloc]init];
-    tabBarController.viewControllers = @[tutorialVC];
+    tabBarController.viewControllers = @[fvc,svc];
+    
+    fvc.tabBarItem.title = @"1";
+    
+    svc.tabBarItem.title = @"2";
 
     self.window.rootViewController = tabBarController;
 //

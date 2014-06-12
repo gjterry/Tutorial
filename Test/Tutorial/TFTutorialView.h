@@ -29,11 +29,7 @@
 + (BOOL)tutorialHasDisplayBeforeWithVersion:(NSString *)version
                                        name:(NSString *)name;
 
-- (void)show;
-
 - (void)showInView:(UIView *)v;
-
-- (void)dismiss;
 
 - (void)dismissFromSuperView;
 

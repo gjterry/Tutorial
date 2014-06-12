@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DE1BF36F1949471700DBFDF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1BF36E1949471700DBFDF0 /* Main.storyboard */; };
-		DE1BF37219494F7F00DBFDF0 /* TFTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BF37119494F7F00DBFDF0 /* TFTutorialViewController.m */; };
+		DE1BF37519495F4400DBFDF0 /* TFSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BF37419495F4400DBFDF0 /* TFSecondViewController.m */; };
+		DE1BF3791949681C00DBFDF0 /* TFTutorialFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BF3781949681C00DBFDF0 /* TFTutorialFactory.m */; };
 		DE81E1DA1945BA6E005F906C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE81E1D91945BA6E005F906C /* Foundation.framework */; };
 		DE81E1DC1945BA6E005F906C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE81E1DB1945BA6E005F906C /* CoreGraphics.framework */; };
 		DE81E1DE1945BA6E005F906C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE81E1DD1945BA6E005F906C /* UIKit.framework */; };
@@ -22,7 +23,7 @@
 		DE81E1FE1945BA6E005F906C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE81E1DD1945BA6E005F906C /* UIKit.framework */; };
 		DE81E2061945BA6E005F906C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE81E2041945BA6E005F906C /* InfoPlist.strings */; };
 		DE81E2081945BA6E005F906C /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE81E2071945BA6E005F906C /* TestTests.m */; };
-		DE81E23B1946B560005F906C /* TFTutorialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE81E2381946B560005F906C /* TFTutorialManager.m */; };
+		DE81E23B1946B560005F906C /* TFTutorialController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE81E2381946B560005F906C /* TFTutorialController.m */; };
 		DE81E23C1946B560005F906C /* TFTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE81E23A1946B560005F906C /* TFTutorialView.m */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +39,10 @@
 
 /* Begin PBXFileReference section */
 		DE1BF36E1949471700DBFDF0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		DE1BF37019494F7F00DBFDF0 /* TFTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFTutorialViewController.h; sourceTree = "<group>"; };
-		DE1BF37119494F7F00DBFDF0 /* TFTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTutorialViewController.m; sourceTree = "<group>"; };
+		DE1BF37319495F4400DBFDF0 /* TFSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSecondViewController.h; sourceTree = "<group>"; };
+		DE1BF37419495F4400DBFDF0 /* TFSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSecondViewController.m; sourceTree = "<group>"; };
+		DE1BF3771949681C00DBFDF0 /* TFTutorialFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFTutorialFactory.h; sourceTree = "<group>"; };
+		DE1BF3781949681C00DBFDF0 /* TFTutorialFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTutorialFactory.m; sourceTree = "<group>"; };
 		DE81E1D61945BA6E005F906C /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE81E1D91945BA6E005F906C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DE81E1DB1945BA6E005F906C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,8 +61,8 @@
 		DE81E2031945BA6E005F906C /* TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestTests-Info.plist"; sourceTree = "<group>"; };
 		DE81E2051945BA6E005F906C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DE81E2071945BA6E005F906C /* TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTests.m; sourceTree = "<group>"; };
-		DE81E2371946B560005F906C /* TFTutorialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFTutorialManager.h; sourceTree = "<group>"; };
-		DE81E2381946B560005F906C /* TFTutorialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTutorialManager.m; sourceTree = "<group>"; };
+		DE81E2371946B560005F906C /* TFTutorialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFTutorialController.h; sourceTree = "<group>"; };
+		DE81E2381946B560005F906C /* TFTutorialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTutorialController.m; sourceTree = "<group>"; };
 		DE81E2391946B560005F906C /* TFTutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFTutorialView.h; sourceTree = "<group>"; };
 		DE81E23A1946B560005F906C /* TFTutorialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTutorialView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +131,8 @@
 				DE1BF36E1949471700DBFDF0 /* Main.storyboard */,
 				DE81E1EE1945BA6E005F906C /* TFFirstViewController.h */,
 				DE81E1EF1945BA6E005F906C /* TFFirstViewController.m */,
+				DE1BF37319495F4400DBFDF0 /* TFSecondViewController.h */,
+				DE1BF37419495F4400DBFDF0 /* TFSecondViewController.m */,
 				DE81E1F41945BA6E005F906C /* Images.xcassets */,
 				DE81E1E01945BA6E005F906C /* Supporting Files */,
 			);
@@ -173,12 +178,12 @@
 		DE81E2361946B560005F906C /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				DE81E2371946B560005F906C /* TFTutorialManager.h */,
-				DE81E2381946B560005F906C /* TFTutorialManager.m */,
+				DE1BF3771949681C00DBFDF0 /* TFTutorialFactory.h */,
+				DE1BF3781949681C00DBFDF0 /* TFTutorialFactory.m */,
 				DE81E2391946B560005F906C /* TFTutorialView.h */,
 				DE81E23A1946B560005F906C /* TFTutorialView.m */,
-				DE1BF37019494F7F00DBFDF0 /* TFTutorialViewController.h */,
-				DE1BF37119494F7F00DBFDF0 /* TFTutorialViewController.m */,
+				DE81E2371946B560005F906C /* TFTutorialController.h */,
+				DE81E2381946B560005F906C /* TFTutorialController.m */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -281,12 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE1BF37219494F7F00DBFDF0 /* TFTutorialViewController.m in Sources */,
 				DE81E1EA1945BA6E005F906C /* TFAppDelegate.m in Sources */,
 				DE81E1F01945BA6E005F906C /* TFFirstViewController.m in Sources */,
 				DE81E23C1946B560005F906C /* TFTutorialView.m in Sources */,
-				DE81E23B1946B560005F906C /* TFTutorialManager.m in Sources */,
+				DE1BF3791949681C00DBFDF0 /* TFTutorialFactory.m in Sources */,
+				DE81E23B1946B560005F906C /* TFTutorialController.m in Sources */,
 				DE81E1E61945BA6E005F906C /* main.m in Sources */,
+				DE1BF37519495F4400DBFDF0 /* TFSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
