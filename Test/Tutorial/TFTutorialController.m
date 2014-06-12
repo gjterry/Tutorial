@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 EDoctor. All rights reserved.
 //
 
-typedef void (^completionCallBack)(BOOL  completion);
+typedef void (^beforecompletionCallBack)(BOOL  isBeforeCompletion);
 
 
 #import "TFTutorialFactory.h"
@@ -15,7 +15,7 @@ typedef void (^completionCallBack)(BOOL  completion);
 
 @interface TFTutorialController () <TutorialViewDelegate>
 
-@property (nonatomic, copy) completionCallBack onCompletion;
+@property (nonatomic, copy) beforecompletionCallBack onCompletion;
 
 @end
 
@@ -25,7 +25,7 @@ typedef void (^completionCallBack)(BOOL  completion);
  *  检测是否打开引导
  */
 - (void)tutorialCheckWithIdentifier:(NSString *)identifier
-                       onCompletion:(void (^)(BOOL competion))callback {
+                       beforeCompletion:(void (^)(BOOL isBeforeCompletion))callback {
     if ([self shouldDisplayTutorialWithName:identifier]) {
         [self showTutorialWithIdentifier:identifier];
         

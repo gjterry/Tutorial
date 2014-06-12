@@ -35,8 +35,8 @@
     [super viewWillAppear:animated];
     
     [self.tutorialController tutorialCheckWithIdentifier:NSStringFromClass([TFFirstViewController class])
-                                            onCompletion:^(BOOL isComplete) {
-                                                NSLog(@"tutorial onCompletion");
+                                            beforeCompletion:^(BOOL isBeforeCompletion) {
+                                                NSLog(@"tutorial beforeCompletion");
                                             }];
 }
 

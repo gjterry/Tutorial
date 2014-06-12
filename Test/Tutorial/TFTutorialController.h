@@ -11,6 +11,6 @@
 @interface TFTutorialController : NSObject
 
 - (void)tutorialCheckWithIdentifier:(NSString *)identifier
-                       onCompletion:(void(^)(BOOL isComplete))completion;
+                   beforeCompletion:(void (^)(BOOL isBeforeCompletion))callback;
 
 @end
